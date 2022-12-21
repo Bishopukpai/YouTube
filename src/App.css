@@ -163,3 +163,18 @@ img{
   padding-top: 0.75rem;
   padding-inline: 1rem;
 }
+/*Sidebar styles end here*/
+
+/*Home Page style starts here*/
+.nav-bar{
+  height: 7.5vh;
+}
+.side-bar{
+  height: 92.5vh;
+  display: flex;
+}
+.home-main{
+  overflow: hidden;
+  max-height: screen;
+  padding-top: 50px;
+}
