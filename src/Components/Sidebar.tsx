@@ -116,57 +116,57 @@ const Sidebar = () => {
       ]
     ]
   return (
-    <main className='w-2/12 bg-[#ffffff] pr-5 overflow-auto pb-8 sidebar'>
+    <main className='sidebar'>
         <section>
-            <ul className='flex flex-col border-b-2 bg-[#ffffff]'>
+            <ul className='main-links'>
                 {mainLinks.map(({icons, name})=>{
                     return(
-                        <li key={name} className={`pl-6 px-3 py-4 hover:bg-zinc-600 ${name === "Home" ? "bg-slate-600": ""}`}>
-                             <a href="#" className='flex items-center gap-5 '>
+                        <li key={name} className={`${name === "Home" ? "text-red-600": ""} link-list`}>
+                             <a href="#">
                                 {icons}
-                                <span className='text-sm tracking-wider'>{name}</span>
+                                <span>{name}</span>
                             </a>   
                         </li>
                     )
                 })}
             </ul>
-            <ul className='flex flex-col border-b-2 bg-[#ffffff]'>
+            <ul className='main-links'>
                 {secondaryLinks.map(({icons, name})=>{
                     return(
-                        <li key={name} className={`pl-6 px-3 py-4 hover:bg-zinc-600 ${name === "Home" ? "bg-slate-600": ""}`}>
-                             <a href="#" className='flex items-center gap-5 '>
+                        <li key={name} className={`${name === "Home" ? "bg-slate-600": ""} link-list`}>
+                             <a href="#" >
                                 {icons}
-                                <span className='text-sm tracking-wider'>{name}</span>
+                                <span>{name}</span>
                             </a>   
                         </li>
                     )
                 })}
             </ul>
-            <ul className='flex flex-col border-b-2 bg-[#ffffff]'>
+            <ul className='main-links'>
                 {subscriptionLinks.map(({icons, name})=>{
                     return(
-                        <li key={name} className={`pl-6 px-3 py-4 hover:bg-zinc-600 ${name === "Home" ? "bg-slate-600": ""}`}>
-                             <a href="#" className='flex items-center gap-5 '>
+                        <li key={name} className={` ${name === "Home" ? "bg-slate-600": ""} link-list`}>
+                             <a href="#">
                                 {icons}
-                                <span className='text-sm tracking-wider'>{name}</span>
+                                <span>{name}</span>
                             </a>   
                         </li>
                     )
                 })}
             </ul>
-            <ul className='flex flex-col border-b-2 bg-[#ffffff]'>
+            <ul className='main-links'>
                 {helpLinks.map(({icons, name})=>{
                     return(
-                        <li key={name} className={`pl-6 px-3 py-4 hover:bg-zinc-600 ${name === "Home" ? "bg-slate-600": ""}`}>
-                             <a href="#" className='flex items-center gap-5 '>
+                        <li key={name} className={`${name === "Home" ? "bg-slate-600": ""} link-list`}>
+                             <a href="#">
                                 {icons}
-                                <span className='text-sm tracking-wider'>{name}</span>
+                                <span>{name}</span>
                             </a>   
                         </li>
                     )
                 })}
             </ul>
-            <ul className='flex gap-2 flex-wrap text-sm p-4 text-zinc-400'>
+            <ul className='main-links'>
                 {textLinks[0].map((name)=>{
                     return (
                         <li key={name}>
@@ -175,7 +175,7 @@ const Sidebar = () => {
                     )
                 })}
             </ul>
-            <ul className='flex gap-2 flex-wrap text-sm p-4 text-zinc-400'>
+            <ul className='main-links'>
                 {textLinks[1].map((name)=>{
                     return (
                         <li key={name}>
@@ -184,11 +184,13 @@ const Sidebar = () => {
                     )
                 })}
             </ul>
-            <span className='px-4 text-sm text-zinc-400 '>&copy; 2022 Google</span>
-            <br/>
-            <p className="px-4 pt-3 text-sm text--zinc-400">
-                This clone was made on Dec. 21 2022, for education purpose only
-            </p>
+            <footer>
+                <span className='footer-span'>&copy; 2022 Google</span>
+                <br/>
+                <p className="footer-paragraph">
+                    This clone was made on Dec. 21 2022, for education purpose only
+                </p>
+            </footer>
         </section>
     </main>
   )

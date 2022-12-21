@@ -118,3 +118,48 @@ img{
   height: 2.25rem;
 }
 /*Navbar style ends here*/
+
+/*Sidebar component starts here*/
+
+.sidebar{
+  padding-bottom: 2rem;
+  padding-right: 1.25rem;
+  background-color: rgb(255 255 255 );
+  overflow: auto;
+  width: 16.666667%;
+}
+.main-links{
+  background-color: rgb(255 255 255);
+  border-bottom-width: 2px;
+  flex-direction: column;
+}
+.link-list{
+  padding-left: 1.5rem;
+  padding-block: 1rem;
+  padding-right: 0.75rem;
+}
+.link-list:hover{
+  color: red;
+}
+.link-list a{
+  gap: 1.25rem;
+  align-items: center;
+  display: flex;
+}
+.link-list span{
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.footer-span{
+  color: rgb(161 161 170);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-inline: 1rem;
+}
+.footer-paragraph{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.75rem;
+  padding-inline: 1rem;
+}
