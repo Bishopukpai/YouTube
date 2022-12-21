@@ -1,3 +1,5 @@
+/*Nav bar styyles starts here*/
+
 .nav-bar{
   display: flex;
   justify-content: space-between;
@@ -40,7 +42,7 @@
   gap: 4rem;
 }
 .search-field{
-  background: zinc;
+  background-color: rgb(24 24 27 );
   display: flex;
   align-items: center;
   height: 2.5rem;
@@ -56,7 +58,7 @@
 .search{
   font-size: x-large;
 }
-.close{
+.close-icon{
   font-size: x-large;
   cursor: pointer;
 }
@@ -74,7 +76,7 @@
   border: none;
   outline: none;
   color: white;
-  background: zinc;
+  background-color: rgb(24 24 27);
 }
 .search{
   background: grey;
@@ -82,3 +84,37 @@
   font-size: 4rem;
   height: 2.4rem;
 }
+.microphone{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.75rem;
+  background-color: rgb(24 24 27);
+  border-radius: 9999px;
+}
+.camera-notification{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  gap: 1.25rem;
+  align-items: center;
+  display: flex;
+}
+.relative{
+  position: relative;
+}
+.notifications{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  background-color: rgb(220 38 38);
+  border-radius: 9999px;
+  left: 0.5rem;
+  bottom: 0.5rem;
+  position: absolute;
+}
+img{
+  border-radius: 9999px;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+/*Navbar style ends here*/

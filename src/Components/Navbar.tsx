@@ -1,7 +1,7 @@
 import React from 'react'
 import react from '../assets/react.svg'
-import {AiOutlineSearch, AiOutlineClose, AiOutlineYoutube, AiOutlineBell} from 'react-icons/ai'
-import {BsBell, BsCameraVideo, BsFillCameraVideoFill, BsYoutube} from 'react-icons/bs'
+import {AiOutlineSearch, AiOutlineClose} from 'react-icons/ai'
+import {BsBell, BsCameraVideo, BsYoutube} from 'react-icons/bs'
 import {BiMicrophone, } from 'react-icons/bi'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { IoAppsSharp } from 'react-icons/io5'
@@ -24,13 +24,13 @@ const Navbar = () => {
 
         <section className='search-form'>
             <form action="">
-                <section className='bg-zinc-900 search-field'>
+                <section className='search-field'>
                     <section className='search-icon'>
                         <article>
                             <AiOutlineSearch className='search-icon' />
                         </article>
-                        <input type="text"  className=' bg-zinc-900 input-field'/>
-                        <AiOutlineClose className='close'/>
+                        <input type="text"  className='input-field'/>
+                        <AiOutlineClose className='close-icon'/>
                     </section>
                     <button className='search-button'>
                         <AiOutlineSearch className='search' />
@@ -38,20 +38,20 @@ const Navbar = () => {
                 </section>
             </form>
 
-            <section className='text-xl p-3 bg-zinc-900 rounded-full'>
+            <section className='microphone'>
                 <BiMicrophone />
             </section>
         </section>
-        <section className='flex gap-5 items-center text-xl '>
+        <section className='camera-notification'>
             <BsCameraVideo />
             <IoAppsSharp />
             <section className='relative'>
                 <BsBell />
-                <span className='absolute bottom-2 left-2 text-xs bg-red-600 rounded-full px-1'>
+                <span className='notifications'>
                     9+
                 </span>
             </section>
-            <img src={react} className="w-9 h-9 rounded-full"/>
+            <img src={react}/>
         </section>
     </main>
   )
