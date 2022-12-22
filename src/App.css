@@ -178,3 +178,61 @@ img{
   max-height: screen;
   padding-top: 50px;
 }
+.videos{
+  padding: 2rem;
+  column-gap: 2rem;
+  row-gap: 3.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: grid;
+}
+
+/*Homepage Component style ends here*/
+
+/*Card component style starts here*/
+
+.card-main{
+  gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  height: 15rem;
+}
+.card-contents{
+  position: relative;
+}
+.video-duration{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-block: 0.125rem;
+  padding-inline: 0.5rem;
+  background: rgb(17 24 39);
+  right: 0.75rem;
+  bottom: 0.75rem;
+  color: white;
+  position: absolute;
+}
+.video-thumbnail{
+  border-radius: 0px;
+  width: 18rem;
+  height: 11rem;
+}
+/*card component style ends here*/
+
+/*spinner component style starts here*/
+.spinner-main{
+  padding-block: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.spinner-section{
+  border-color: rgb(220 38 38 );
+  border-top: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 9999px;
+  animation: spin 1s linear infinite;
+  width: 2.5rem;
+  height: 2.5rem;
+}

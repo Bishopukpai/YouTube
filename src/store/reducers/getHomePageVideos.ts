@@ -1,5 +1,3 @@
-
-
 import {createAsyncThunk} from '@reduxjs/toolkit'
 import { RootState } from '..'
 import axios from 'axios'
