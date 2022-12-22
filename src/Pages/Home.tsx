@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
+import InfiniteScroll from 'react-infinite-scroll-component'
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar'
+import Spinner from '../Components/Spinner'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import { getHommePageVideos } from '../store/reducers/getHomePageVideos'
 
@@ -19,6 +21,8 @@ const Home = () => {
       </nav>
       <section className='side-bar'>
           <Sidebar />
+          {/* {videos.length ? (<InfiniteScroll></InfiniteScroll> ):(<Spinner />)} */}
+          <Spinner />
       </section>
     </main>
   )
